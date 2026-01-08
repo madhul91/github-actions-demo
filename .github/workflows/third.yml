@@ -1,23 +1,19 @@
-name: third yml file
+name: Checkout Demo
 
 on:
   push:
     branches:
       - main
 
-
-
 jobs:
-  third-job:
+  demo-job:
     runs-on: ubuntu-latest
+
     steps:
-    
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: step 2 check environemt variable 
-        run: | 
-          whoami
-      - name: my name
-        run: echo "hello world there would ne"    
+      - name: List repository files
+        run: |
+          ls -l
 
-
-        
