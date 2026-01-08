@@ -16,6 +16,8 @@ jobs:
       - name: step 2 check environemt variable 
         run: | 
           whoami
+      - name: my name
+        run: echo "hello world"    
 
 
         
